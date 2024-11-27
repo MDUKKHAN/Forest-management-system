@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #000000;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #c71471;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;
+}
+
+/* Header Section */
+header.header {
+  text-align: center;
+  padding: 50px;
+  background-color: #880549;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+
+.highlight {
+  position: absolute;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.highlight:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Forest Grid Section */
+.forest-grid {
+  color: rgb(253, 253, 253);
+}
+.forest-grid {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+}
+
+.forest-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+
+.grid-container a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #880549;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.grid-container a:hover {
+  background-color: #4c0231;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background:   #880549;
+  color: white;
+  margin-bottom: 0;
+}

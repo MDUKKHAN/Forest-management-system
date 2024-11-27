@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gir Forest</title>
+    <link rel="stylesheet" href="gir_forest.css">
+    <script></script>
+</head>
+<body>
+    <header>
+        <h1>Gir Forest</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#biodiversity">Biodiversity</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Gir Forest</h2>
+        <p>
+            Gir Forest, located in the state of Gujarat, India, is renowned as the last abode of the Asiatic lion. Spanning over 1,412 square kilometers, the Gir Forest National Park and Wildlife Sanctuary is a jewel in India's natural heritage, offering a unique mix of dry deciduous forest, evergreen flora, and grasslands.
+        </p>
+        <p>
+            Established in 1965, Gir Forest plays a vital role in preserving the Asiatic lion's population, which was on the brink of extinction. Today, the forest stands as a testament to successful wildlife conservation efforts, drawing researchers, photographers, and tourists from across the globe.
+        </p>
+    </section>
+    <section id="biodiversity">
+        <h2>Biodiversity</h2>
+        <p>
+            Gir Forest is home to over 400 species of plants, 300 species of birds, 30 species of mammals, and numerous reptiles. The iconic Asiatic lion is undoubtedly the highlight, but the forest also shelters leopards, antelopes, jackals, and crocodiles, making it a rich and diverse ecosystem.
+        </p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="gir_images/gir_1.jpg" alt="Asiatic Lion in Gir Forest">
+                </div>
+                <div class="carousel-item">
+                    <img src="gir_images/gir_2.webp" alt="Beautiful Landscape of Gir">
+                </div>
+                <div class="carousel-item">
+                    <img src="gir_images/gir_3.jpg" alt="Fauna in Gir Forest">
+                </div>
+         
+    </section>
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>
+            For more information, reach out to us at 
+            <a href="mailto:info@girforest.com">info@girforest.com</a>.
+        </p>
+    </footer>
+    <script src="gir_forest.js">let currentIndex = 0;
+      const slides = document.querySelectorAll('.carousel-item');
+      const totalSlides = slides.length;
+      
+      function showSlide(index) {
+        const carouselImages = document.querySelector('.carousel-images');
+        const slideWidth = slides[0].clientWidth;
+        carouselImages.style.transform = `translateX(-${index * slideWidth}px)`;
+      }
+      
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+      }
+      
+      function startSlideshow() {
+        setInterval(nextSlide, 2000); // 2 seconds interval
+      }
+      
+      // Start the slideshow when the page loads
+      window.onload = startSlideshow;
+      </script>
+</body>
+</html>

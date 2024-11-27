@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #f4a7b9;
+}
+
+header {
+    background: url("https://tse3.mm.bing.net/th?id=OIP.ZkUg5b7kd7tkMARbcLTJfwHaDe&pid=Api&P=0&h=220") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay h1 {
+    font-size: 3.5rem;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.overlay .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff69b4;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.overlay .cta-button:hover {
+    background: #ff85c4;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #f4a7b9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff69b4;
+}
+
+/* Section Layouts */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff69b4;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #e8d5de;
+}
+
+/* Grid Layouts */
+.info-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-card, .gallery-grid img {
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.info-card:hover, .gallery-grid img:hover {
+    transform: scale(1.05);
+    background-color: #ff69b4;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #1a1a1a;
+    color: #ff69b4;
+    padding: 20px;
+}
